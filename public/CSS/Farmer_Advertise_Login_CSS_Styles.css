@@ -1,0 +1,122 @@
+body{
+	margin: 0;
+	padding: 0;
+  
+	min-height: 100vh;
+	font-family: 'Jost', sans-serif;
+	/* background: url("/imagesfarmer/backgroundlogin.jpg")  */
+	background-image: url("/IMAGES/BACKGROUND_PICS/login_background1.jpg");
+
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.main123{
+    display: flex;
+    justify-content: space-around;
+}
+
+.main23456{
+    margin-top: 5rem;
+	width: 450px;
+	height: 500px;
+	background-image: url("/IMAGES/BACKGROUND_PICS/login_backgound2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+
+	border-radius: 10px;
+	box-shadow: 5px 20px 50px #000;
+	box-shadow: 4.0px 8.0px 8.0px -4px -8px 18px hsla(135, 76%, 24%, 0.48);
+}
+
+.login{
+    position: relative;
+	width:100%;
+	height: 100%;
+	font-size: 1.5rem;
+}
+label{
+	color: #03fff6;
+	font-size: 1.7em;
+	justify-content: center;
+	display: flex;
+	margin: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+}
+input{
+    position: relative;
+	width: 60%;
+	height: 20px;
+	background: #e0dede;
+	justify-content: center;
+	display: flex;
+	margin: 20px auto;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+input:hover{
+	box-shadow: 4.0px 8.0px 8.0px hsla(312, 82%, 67%, 0.48);
+
+}
+input[type="submit"]{
+	width: 60%;
+	height: 50px;
+	margin: 3px auto;
+	justify-content: center;
+    text-align: center;
+	display: block;
+	color: #100f0f;
+	background-color: #03fff6;
+	font-size: 1.8rem;
+	font-weight: bold;
+	margin-top: 8px;
+	outline: none;
+	border: none;
+	border-radius: 9px;
+
+	cursor: pointer;
+	
+}
+#eye{
+    position: absolute;
+    top: 58%;
+    right: 22%;
+}
+#eye1{
+    position: absolute;
+    top:30%;
+    right: 22%;
+}
+#login1{
+    position: relative;
+    top: 3rem;
+    left: 47%;
+	padding: 14px;
+	background-color: rgb(63, 155, 21);
+	font-size: 1.5rem;
+	border-radius: 10px;
+}
+#login1:hover{
+	background-color: rgb(238, 192, 105);
+}
+
+
+
+.change a{
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+	color: red;
+	font-size: 40px;
+	font-weight: bolder;
+	cursor: pointer;
+	text-decoration: none;
+}
+#user1{
+	font-size: 15px;
+	color: red;
+}

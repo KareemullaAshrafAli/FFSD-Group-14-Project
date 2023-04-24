@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta cha$et="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/Farmer_Home_CSS_Styles.css">
+    <link rel = "icon" href = "/IMAGES/LOGO_FAVICON/Favicon_Icon.ico" type = "image/x-icon"  sizes = "16x16 32x32">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+      .veg_1{
+         display: none;
+      }
+      .fruits_1{
+         display: none;
+      }
+      .mi1k_1{
+         display: none;
+      }
+
+    </style>
+</head>
+<body>
+    
+   <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <img src="/IMAGES/BACKGROUND_PICS/up.png" alt="up" height="40px">
+   </button>
+   <header class="header">
+      <img class = "HI1" style = "width:18%; height:14%; margin-left:4px; margin-top:1px; "  src="../Images/LOGO_FAVICON/Main_Logo.png" alt="">
+
+        <nav class="navbar">
+          <a id="home_1" href="#">Home</a>
+          <a href="#fruits">Fruits</a>
+          <a href="#vegetables">Vegtables</a>
+          <a href="#meat">Meat</a>       
+       </nav>
+
+       <div class="icons">
+          <div class="fas fa-bars" id="menu-btn"></div> 
+          <div class="fas fa-search" id="search-btn"></div> 
+          
+          <div class="fas fa-shopping-cart" id="cart-btn"></div>
+     
+          <div id="loginbtn" class="first " style="text-transform: capitalize;font-size: 30px; "></div>    
+          
+       </div>
+       <form action="" class="search-from">
+          <input type="search" id="search-box" placeholder="search here..">
+          <label for="search-box" class="fas fa-search "></label>
+       </form>  
+       
+        <div class="container" style="height:400px;width:350px;overflow:auto;"> 
+           <div class="cart-container">
+                  <h1>Cart</h1>
+                  <table>
+                    <thead>
+                      <tr>
+                      <th><strong>Product</strong></th>
+                      <th><strong>Price</strong></th>
+                    </tr>
+                    </thead>
+                    <tbody id="carttable">
+                    </tbody>
+                  </table>
+                  <hr>
+                  <table id="carttotals">
+                    <tr>
+                      <td><strong>Items</strong></td>
+                      <td><strong>Total</strong></td>
+                    </tr>
+                    <tr>
+                      <td>x <span id="itemsquantity">0</span></td>
+                     
+                      <td>$<span id="total">0</span></td>
+                    </tr></table>
+        
+                    
+                  <div class="cart-buttons">  
+                    <button id="emptycart">Empty Cart</button>
+                    <a href="/Customer_Checkout"><button type="submit" class="button"> CheckOut</button> </a>
+                  </div>
+                </div>
+        </div>
+        
+       
+       
+     </header>
+     
+   
+<div class="box1">
+<marquee behavior="" direction="left" >
+<a href="">What are some of the most common pests and diseases that affect crops, and how can they be managed?</a></marquee>
+</div>
+<div class="main_page_12">
+
+   <div class="slideshow-container">
+      <div class="mySlides fade">
+          <img src="/IMAGES/SLIDING_PICS/sliding.jpg" style=" width:100vw ; height:85vh">
+
+      </div>
+      <div class="mySlides fade">
+
+          <img src="/IMAGES/SLIDING_PICS/slide2.jpg" style=" width:100vw ; height:85vh">
+
+      </div>
+      <div class="mySlides fade">
+
+          <img src="/IMAGES/SLIDING_PICS/slide3.jpg" style=" width:100vw ; height:85vh">
+
+      </div>
+      <div class="mySlides fade">
+
+         <img src="/IMAGES/SLIDING_PICS/slide4.jpg" style=" width:100vw ; height:85vh">
+
+     </div>
+     
+      <div style="text-align:center; margin:-5vh;">
+
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+
+      </div>
+      <a class="prev" onclick="prevSlide()"></a>
+      <a class="next" onclick="showSlides()"></a>
+
+
+  </div>
+
+
+  <h1 class="heading"> <span>Vegetables</span></h1>
+  
+  <section class="products" id="products" >
+   
+
+   
+
+   <div class="swiper product-slider productcont" id="seeds">
+   <% if(vegetables.length>0){ %>
+      <% vegetables.forEach(( res2,i)=>{%>
+         <% if (i <= 7 && res2.product_type === "Vegetable") { %>
+            <div style="margin-bottom: 2rem;" class="product box" >
+              
+               <img style="height: 5cm; width: 5cm;" src="<%= res2.product_img %>" alt="" >
+               <h3 style="font-size: 2rem;" class="productname"><%= res2.product_name%></h3>
+               
+               <div style="font-size: 1.5rem;font-weight: bold;  color: green;">Quantity : <span style="font-size: 2rem;font-weight: bold; color: orange;"><%= res2.quantity_available%>kg</span></div>
+               <div class="price">Rs <%=res2.product_selling_price%></div>
+               <div class="price1" style="text-decoration: line-through;">Rs <%= res2.product_mrp%> </div>
+               <div class="off" style="color: red;">Get <%= res2.offer%>% off</div>
+               <div class="plus" >plus <%= res2.delvary_charges%>Rs delivery charges</div>
+               <div  class="btn addtocart">Add cart</div>
+            </div>
+            <% } %>
+            <% }) %>
+            <% }else{ %>
+               
+           <p style="text-align: center;">NO PRODUCTS...</p>
+           <% } %>
+            </div>
+   </section>
+
+
+   <div class="b1" id="veg_show">
+      <a href="#" class="bt1">Show more</a>
+   </div>
+   
+
+
+
+
+  <h1 class="heading"> <span>Fruits</span></h1>
+
+  <section class="products" id="products" >
+   
+
+   <div class="swiper product-slider productcont" id="seeds">
+   <% if(fruits.length>0){ %>
+      <% fruits.forEach(( res2,i)=>{%>
+         <% if (i <= 7 && res2.product_type === "Fruit") { %>
+      
+            <div style="margin-bottom: 2rem;" class="product box" >
+              
+               <img style="height: 5cm; width: 5cm;" src="<%= res2.product_img %>" alt="" >
+               <h3 style="font-size: 2rem;" class="productname"><%= res2.product_name%></h3>
+               
+               <div style="font-size: 1.5rem;font-weight: bold;  color: green;">Quantity : <span style="font-size: 2rem;font-weight: bold; color: orange;"><%= res2.quantity_available%>kg</span></div>
+               <div class="price">Rs <%=res2.product_selling_price%></div>
+               <div class="price1" style="text-decoration: line-through;">Rs <%= res2.product_mrp%> </div>
+               <div class="off" style="color: red;">Get <%= res2.offer%>% off</div>
+               <div class="plus" >plus <%= res2.delvary_charges%> delivery charges</div>
+               <div  class="btn addtocart">Add cart</div>
+            </div>
+            <% } %>
+            <% }) %>
+            <% }else{ %>
+               
+           <p style="text-align: center;">NO PRODUCTS...</p>
+           <% } %>
+            </div>
+   </section>
+   <div class="b1" id="fruit_show">
+      <a href="#" class="bt1">Show more</a>
+   </div>
+
+
+
+
+
+
+
+<h1 class="heading"><span>Milk</span> & <span>Meat</span></h1>
+
+<section class="products" id="products" >
+   
+
+
+   <div class="swiper product-slider productcont" id="seeds">
+   <% if(meat.length>0){ %>
+      <% meat.forEach( (res2, i)=>{%>
+   
+            <% if (i <= 7 && res2.product_type === "Dairy/Meat") { %>
+
+               <div style="margin-bottom: 2rem;" class="product box" >
+                 
+                  <img style="height: 5cm; width: 5cm;" src="<%= res2.product_img %>" alt="" >
+                  <h3 style="font-size: 2rem;" class="productname"><%= res2.product_name%></h3>
+                  
+                  <div style="font-size: 1.5rem;font-weight: bold;  color: green;">Quantity : <span style="font-size: 2rem;font-weight: bold; color: orange;"><%= res2.quantity_available%>kg</span></div>
+                  <div class="price">Rs <%=res2.product_selling_price%></div>
+                  <div class="price1" style="text-decoration: line-through;">Rs <%= res2.product_mrp%> </div>
+                  <div class="off" style="color: red;">Get <%= res2.offer%>% off</div>
+                  <div class="plus" >plus <%= res2.delvary_charges%> delivery charges</div>
+                  <div  class="btn addtocart">Add cart</div>
+               </div>
+            <% } %>
+            <% }) %>
+            <% }else{ %>
+               
+           <p style="text-align: center;">NO PRODUCTS...</p>
+           <% } %>
+            </div>
+   </section>
+   <div class="b1" id="milk_show">
+      <a href="#" class="bt1">Show more</a>
+   </div>
+   
+<% if (successMsg) { %>
+   <div style=" height: fit-content; width: 25rem;" class="popup_1">
+     <img style="height: 5rem; width: 5rem;" src="/IMAGES/SLIDING_PICS/correct.gif" alt="">
+     <p><%= successMsg %></p>
+     <span class="close" onclick="this.parentElement.style.display='none';">&times;</span>
+   </div>
+ <% } %>
+
+ </div>
+ <br><br><br>
+ <div class="veg_1">
+   <h1 class="heading"> <span>Vegetables</span></h1>
+   
+   
+   <section class="products" id="products" >
+      
+   
+      <div class="swiper product-slider productcont" id="seeds">
+         <% if(vegetables.length>0){ %>
+            <% vegetables.forEach( res2=>{%>
+               <% if (res2.product_type === "Vegetable") { %>
+         
+               <div style="margin-bottom: 2rem;" class="product box" >
+                 
+                  <img style="height: 5cm; width: 5cm;" src="<%= res2.product_img %>" alt="" >
+                  <h3 style="font-size: 2rem;" class="productname"><%= res2.product_name%></h3>
+                  
+                  <div style="font-size: 1.5rem;font-weight: bold;  color: green;">Quantity : <span style="font-size: 2rem;font-weight: bold; color: orange;"><%= res2.quantity_available%>kg</span></div>
+                  <div class="price">Rs <%=res2.product_selling_price%></div>
+                  <div class="price1" style="text-decoration: line-through;">Rs <%= res2.product_mrp%> </div>
+                  <div class="off" style="color: red;">Get <%= res2.offer%>% off</div>
+                  <div class="plus" >plus <%= res2.delvary_charges%> delivery charges</div>
+                  <div  class="btn addtocart">Add cart</div>
+               </div>
+               <% } %>
+               <% }) %>
+               <% }else{ %>
+                  
+              <p style="text-align: center;">NO PRODUCTS...</p>
+              <% } %>
+               </div>
+      </section>
+   
+   </div>
+   <br><br><br>
+   <div class="fruits_1">
+      <h1 class="heading"> <span>Fruits</span></h1>
+      <section class="products" id="products" >
+      
+   
+            <div class="swiper product-slider productcont" id="seeds">
+           
+                     <% if(fruits.length>0){ %>
+                        <% fruits.forEach( res2=>{%>
+                           <% if (res2.product_type === "Fruit") { %>
+               
+                     <div style="margin-bottom: 2rem;" class="product box" >
+                       
+                        <img style="height: 5cm; width: 5cm;" src="<%= res2.product_img %>" alt="" >
+                        <h3 style="font-size: 2rem;" class="productname"><%= res2.product_name%></h3>
+                        
+                        <div style="font-size: 1.5rem;font-weight: bold;  color: green;">Quantity : <span style="font-size: 2rem;font-weight: bold; color: orange;"><%= res2.quantity_available%>kg</span></div>
+                        <div class="price">Rs <%=res2.product_selling_price%></div>
+                        <div class="price1" style="text-decoration: line-through;">Rs <%= res2.product_mrp%> </div>
+                        <div class="off" style="color: red;">Get <%= res2.offer%>% off</div>
+                        <div class="plus" >plus <%= res2.delvary_charges%> delivery charges</div>
+                        <div  class="btn addtocart">Add cart</div>
+                     </div>
+                     <% } %>
+                     <% }) %>
+                     <% }else{ %>
+                        
+                    <p style="text-align: center;">NO PRODUCTS...</p>
+                    <% } %>
+                     </div>
+            </section>
+   </div>
+
+   <br><br><br>
+
+   <div class="mi1k_1">
+      <!-- viewmore -->
+      <h1 class="heading"><span>Milk</span> & <span>Meat</span></h1>
+      <section class="products" id="products" >
+         
+      
+         <div class="swiper product-slider productcont" id="seeds">
+         <% if(meat.length>0){ %>
+            <% meat.forEach( res2=>{%>
+         
+              <% if (res2.product_type === "Dairy/Meat") { %>
+              
+            
+                  <div style="margin-bottom: 2rem;" class="product box" >
+                    
+                     <img style="height: 5cm; width: 5cm;" src="<%= res2.product_img %>" alt="" >
+                     <h3 style="font-size: 2rem;" class="productname"><%= res2.product_name%></h3>
+                     
+                     <div style="font-size: 1.5rem;font-weight: bold;  color: green;">Quantity : <span style="font-size: 2rem;font-weight: bold; color: orange;"><%= res2.quantity_available%>kg</span></div>
+                     <div class="price">Rs <%=res2.product_selling_price%></div>
+                     <div class="price1" style="text-decoration: line-through;">Rs <%= res2.product_mrp%> </div>
+                     <div class="off" style="color: red;">Get <%= res2.offer%>% off</div>
+                     <div class="plus" >plus <%= res2.delvary_charges%> delivery charges</div>
+                     <div  class="btn addtocart">Add cart</div>
+                  </div>
+                  <% } %>
+                  <% }) %>
+                  <% }else{ %>
+                     
+                 <p style="text-align: center;">NO PRODUCTS...</p>
+                 <% } %>
+                  </div>
+         </section>
+  </div>
+
+
+<br><br><br>
+<div class="profile_data_12" >
+
+
+    <div class="cont123" id="con1">
+		
+        <div class="flex1">
+        <!-- <div  class="first1" style="text-transform: capitalize; "><span id="loginbtn2"></span></div>  
+        <img  class="first1" src="<%= user.imageurl %>" alt=""> -->
+
+                <%if(!user.imageurl){%>
+                    <div  class="first1" style="text-transform: capitalize; "><span id="loginbtn2"></span></div>  
+                <%}%>
+                <%if(user.imageurl){%>
+                        <img  class="first1" src="<%= user.imageurl %>" alt="">
+                    <%}%>
+
+
+       </div>
+        <br> 
+        <a href="#file">
+       <button style="font-size: 2rem;" class="image" id="ima">Upload photo</button>
+    </a>
+        <br>
+
+          <p style="text-transform: capitalize;font-size: 3rem; font-weight: bold; " id="name10" class="name_1" data-user="<%= user.user %>">  <%= user.user %></p>
+        <hr>
+        <br>
+        
+		<div class="attribute1">
+            <label style="font-size: 2rem;" class="l1">Email</label>
+            <p style="font-size: 2rem;" class="email">: <%= user.email %></p>
+            
+            
+		</div>
+      <br><br>
+		<div class="attribute1">
+            <label style="font-size: 2rem;" class="l1">phonenumber</label>
+            <p style="display: inline-block;font-size: 2rem;"  class="phone">:<%= user.phonenumber %></p>
+		</div>
+      <br><br>
+		<div class="attribute1">
+			<label style="font-size: 2rem;" class="l1">State </label>
+			<p style="display: inline-block;font-size: 2rem;"  class="state">:<%= user.State_Name %></p>
+		</div>
+      <br><br>
+		<div class="attribute1">
+			<label style="font-size: 2rem;" class="l1">PinCode</label>
+			<p style="display: inline-block;font-size: 2rem;"  class="pincode">:<%= user.Pincode %></p>
+		</div>
+      <br><br>
+		<div class="attribute1">
+			<label style="font-size: 2rem;" class="l1">Address</label>
+			<p style="display: inline-block;font-size: 2rem;"  class="Adderss">:<%= user.Address %></p>
+		</div>
+      <br><br>
+        
+        <button id="delete" class="my-button">Delete</button>
+        <a href="#update">
+        <button id="update" class="my-button1">Update</button>
+    </a>
+
+
+    </div>
+    <br>
+    <br>
+    <h1>Upload Photo</h1>
+        <div id="file" >
+            <form id="form1"   action="/customer_uploadimage" method="POST" >
+                
+                <label style="font-size: 2rem;" for="textInput">Phone Number :</label>
+                <input type="text" id="textInput" name="phone6" value="<%= user.phonenumber %>" readonly>
+    
+                <label style="font-size: 2rem;" for="fileInput">Choose a Photo/Url:</label>
+                <input type="text" id="fileInput" name="imageurl" >
+                
+                <input type="submit" value="Submit">
+                
+              </form>
+            </div>
+            <br><br>
+            <h1>Update details</h1>
+            <div id="update">
+            <form  id="form2" action="/customer_update" method="post">
+                <label style="font-size: 2rem;" for="name1">Name :</label>
+                <input   id="name110" type="text" name="user5"  value="<%= user.user %>">
+                <label style="font-size: 2rem;" for="email">Email:</label>
+                <input   id="email" type="email" name="email5" value="<%= user.email %>">
+                <label style="font-size: 2rem;" for="phone">Phone Number:</label>
+                <input   type="text" id="phone" name="phonenumber5"  value="<%= user.phonenumber %>" readonly>
+                <label style="font-size: 2rem;" for="State_Name">State:</label>
+                 <input  type = "text" id = "State_Name1" name = "State_Name5"  value="<%= user.State_Name %>"> 
+                 <label style="font-size: 2rem;" for="Pincode">Pincode:</label>
+                 <input  type = "text" id = "Pincode1" name = "Pincode5" value="<%= user.Pincode %>"> 
+                 <label style="font-size: 2rem;" for="Address">Address:</label>
+                <textarea  id = "Address" name = "Address5" maxlength = "100" minlength = "5" rows = "3" cols = "44"><%= user.Address %></textarea>
+                <input id="button1" type="submit" value="Submit">
+                
+            
+            </form>
+        </div>      
+    
+</div>
+<br><br><br><br><br><br>
+<%- include('partials/Footer') %>
+<script>
+   let x = document.getElementById('name10').getAttribute('data-user');
+  
+  let y = x[0];
+
+  document.getElementById('loginbtn').innerHTML=y;
+  
+  if(document.getElementById('loginbtn2'))
+      document.getElementById('loginbtn2').innerHTML=y;
+
+const x1=document.getElementsByClassName('main_page_12')[0];
+const x2=document.getElementsByClassName('profile_data_12')[0];
+const x3=document.getElementsByClassName('veg_1')[0];
+const x4=document.getElementsByClassName('mi1k_1')[0];
+const x5=document.getElementsByClassName('fruits_1')[0];
+
+const x6=document.getElementById('loginbtn');
+const x7=document.getElementById('home_1');
+const x8=document.getElementById('veg_show');
+const x9=document.getElementById('milk_show');
+const x10=document.getElementById('fruit_show');
+
+
+x6.addEventListener('click',fun)
+x7.addEventListener('click',fun2)
+x8.addEventListener('click',fun3)
+x9.addEventListener('click',fun4)
+x10.addEventListener('click',fun5)
+
+
+function fun(){
+    
+     x2.style.display='inline';
+     x1.style.display='none';
+     x3.style.display='none';
+     x4.style.display='none';
+     x5.style.display='none';
+  
+ 
+ }
+ function fun2(){
+    
+    x2.style.display='none';
+    x1.style.display='inline';
+    x3.style.display='none';
+    x4.style.display='none';
+    x5.style.display='none';
+ 
+
+}
+function fun3(){
+    
+    x2.style.display='none';
+    x1.style.display='none';
+    x3.style.display='inline';
+    x4.style.display='none';
+    x5.style.display='none';
+ 
+
+}
+function fun4(){
+    
+    x2.style.display='none';
+    x1.style.display='none';
+    x3.style.display='none';
+    x4.style.display='inline';
+    x5.style.display='none';
+ 
+
+}
+function fun5(){
+    
+    x2.style.display='none';
+    x1.style.display='none';
+    x3.style.display='none';
+    x4.style.display='none';
+    x5.style.display='inline';
+ 
+
+}
+      
+</script>
+<script src="/JAVASCRIPT/Farmer_Home_Js.js"></script>
+
+</body>
+</html>

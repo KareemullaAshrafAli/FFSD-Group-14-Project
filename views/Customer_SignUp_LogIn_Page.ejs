@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+
+
+
+
+
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> -->
+<link rel="stylesheet" type="text/css" href="/CSS/Login_SignUp_Page_CSS_Styles.css">
+<link rel = "icon" href = "/IMAGES/LOGO_FAVICON/Favicon_Icon.ico" type = "image/x-icon"  sizes = "16x16 32x32">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<title>Customer login page</title>
+</head>
+
+
+<body>
+	 
+	<div class="change"><a href="/">X</a></div>
+					
+		<button id="login1">Login</button>
+		<button id="signup1">Registration</button>
+		
+
+
+
+
+
+
+		<div class="main123">
+       <div class="main1234">
+			<div class="signup">
+				<form id="signup_form" action="/customer_SignUp" method="post">
+					<label >Registration</label>
+					<input style="padding: 15px;" id="name" type="text" name="user" placeholder="User name" required="" >
+					
+				
+					
+					<input style="padding: 15px;"  type="text" id="phone" name="phonenumber"  placeholder="phonenumber" required>
+					<input style="padding: 15px;"  id="email" type="email" name="email" placeholder="Email" required="">
+
+                     <input style="padding: 15px;"  id="pass" type="password" name="password" placeholder="Password" required>
+						
+                        <i  class="fa-solid fa-eye" id="eye"></i>
+
+						<input style="padding: 15px;" type = "text" id = "State_Name" name = "State_Name" title = "Enter Your State name correctly" placeholder="State name." required> 
+				
+						<input style="padding: 15px;" type = "text" id = "Pincode" name = "Pincode"  title = "Enter a valid 6-Digit Pincode" placeholder="Pincode.." required> 
+						<textarea  style = "resize:none; margin-left: 3.4rem; border-radius: 5px;" oninput = "" id = "Address" name = "Address" maxlength = "100" minlength = "5" rows = "3" cols = "44" placeholder = "Enter Your Address here!" title = "Enter Your Address not more than 15-30 words" required></textarea>
+
+						<input id="button1" type="submit" value="Sign Up">
+					
+				</form>
+			</div>
+		</div>
+			
+
+
+
+		<div class="main23456">
+			<div class="login">
+				<form id="login_form" action="/customer_SignIn" method="post">
+					<label style="margin-bottom: 3rem;" >Login</label>
+					<input style="padding: 15px;"  type="text" id="phone" name="phonenumber1" required="" placeholder="Phone number" >
+					<input style="padding: 15px;"  id="pass1" type="password" name="password1" placeholder="Password" required="">
+                    <i  class="fa-solid fa-eye" id="eye1"></i>
+					<div id="forgot1" class="forgot2"><a href="#">Forgot Password?</a></div>
+					<input id="button1" type="submit" value="Login">
+				</form>
+			</div>
+	</div>
+
+	<div class="forgot">
+		<div class="forgotpass">
+			<form id="forgot_form" action="/customer_forgot" method="post">
+				<label style="margin-bottom: 3rem;">Forgot Password</label>
+				<input style="padding: 15px;"  type="text" id="phone" name="phonenumber2" required="" placeholder="Phone number" >
+				<input style="padding: 15px;"  id="pass2" type="password" name="password2" placeholder="Enter new Password" required="">
+				<i  class="fa-solid fa-eye" id="eye2"></i>
+				<input id="button2" type="submit" value="Submit">
+			</form>
+		</div>
+</div>
+</div>
+
+<% if (errorMsg) { %>
+	<div class="popup">
+	  <img style="height: 4rem; width: 5rem;" src="/IMAGES/SLIDING_PICS/worng.gif" alt="">
+	  <p><%= errorMsg %></p>
+	  <span class="close" onclick="this.parentElement.style.display='none';">&times;</span>
+	</div>
+  <% } %>
+  
+  
+  <% if (successMsg) { %>
+    <div class="popup1">
+      <img style="height: 4rem; width: 4rem;" src="/IMAGES/SLIDING_PICS/correct.gif" alt="">
+      <p><%= successMsg %></p>
+      <span class="close" onclick="this.parentElement.style.display='none';">&times;</span>
+    </div>
+  <% } %>
+
+
+<script src="/JAVASCRIPT/Login_SignUp_Page.js"></script> 
+	
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="/CSS/Login_SignUp_Page_CSS_Styles.css">
+
+<link rel = "icon" href = "/IMAGES/LOGO_FAVICON/Favicon_Icon.ico" type = "image/x-icon"  sizes = "16x16 32x32">
+</head>
+
+
+
+<body>
+	 
+	
+
+					
+		
+		
+<div  class="main123">
+
+    <div style="display: block;" class="main23456">
+			<div class="login">
+				<form id="login_form" action="/Farmer_Advertise" method="post">
+					<label >Login</label>
+					<input style="padding: 15px;"  type="text" id="phone" name="phonenumber1" required="" placeholder="Phone number" >
+					<input style="padding: 15px;"  id="pass1" type="password" name="password1" placeholder="Password" required="">
+                    <i style="top:29.5%;" class="fa-solid fa-eye" id="eye1"></i>
+
+					<input id="button1" type="submit" value="Login">
+				</form>
+			</div>
+	</div>
+	<script>
+
+		const passwordInput1 = document.querySelector("#pass1")
+		const eye1 = document.querySelector("#eye1")
+		eye1.addEventListener("click", function(){
+		  this.classList.toggle("fa-eye-slash")
+		  const type = passwordInput1.getAttribute("type") === "password" ? "text" : "password"
+		  passwordInput1.setAttribute("type", type)
+		})
+		 </script>
+
+<% if (errorMsg) { %>
+	<div class="popup">
+	  <img style="height: 4rem; width: 5rem;" src="/IMAGES/SLIDING_PICS/worng.gif" alt="">
+	  <p><%= errorMsg %></p>
+	  <span class="close" onclick="this.parentElement.style.display='none';">&times;</span>
+	</div>
+  <% } %>
+  
+  
+  <% if (successMsg) { %>
+    <div class="popup1">
+      <img style="height: 4rem; width: 4rem;" src="/IMAGES/SLIDING_PICS/correct.gif" alt="">
+      <p><%= successMsg %></p>
+      <span class="close" onclick="this.parentElement.style.display='none';">&times;</span>
+    </div>
+  <% } %>
+</div>
+
+	
+</body>
+</html>

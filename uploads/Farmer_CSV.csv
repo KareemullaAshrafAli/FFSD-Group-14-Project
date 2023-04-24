@@ -1,0 +1,67 @@
+product_name,product_img,product_mrp,product_selling_price,quantity_available,offer,delvary_charges,product_type,discription,Farmer ID,Product ID
+Chicken,https://i.ibb.co/Hh4CjDG/chicken.jpg,800,799,10,1,100,Dairy/Meat,This is Meat,FA3343,P7777
+Clams,https://i.ibb.co/3v1T7gT/clams.jpg,2500,2440,15,1,200,Dairy/Meat,This is Meat,FA3343,P8888
+Crab,https://i.ibb.co/Xjj3Qcp/crab.jpg,3500,3440,10,1,450,Dairy/Meat,This is Meat,FA2723,P9999
+Duck,https://i.ibb.co/FDkj8yM/duck.jpg,2000,1999,9,1,120,Dairy/Meat,This is Meat,FA6050,P1212
+Eggs,https://i.ibb.co/GTnY03d/eggs.jpg,150,150,150,0,450,Dairy/Meat,This is Meat,FA4814,P2323
+Emu,https://i.ibb.co/HXTzrBS/emu.jpg,1200,1200,15,0,320,Dairy/Meat,This is Meat,FA3343,P3434
+Fish,https://i.ibb.co/wLVMYPq/fish.png,1500,1400,25,2,450,Dairy/Meat,This is Meat,FA6050,P4545
+Himalayan Goat,https://i.ibb.co/PgzzQMG/himalayangoat.png,2500,2450,15,1,200,Dairy/Meat,This is Meat,FA3343,P5656
+Lobster,https://i.ibb.co/zfqWBZb/lobster.jpg,5500,5400,25,12,300,Dairy/Meat,This is Meat,FA2723,P6767
+Milk,https://i.ibb.co/c3M9VQy/milk.png,100,99,500,1,120,Dairy/Meat,This is Meat,FA3343,P7878
+Milk Chocolate,https://i.ibb.co/H4p5F4p/milkchocolate.jpg,150,149,20,2,100,Dairy/Meat,This is Meat,FA6050,P8989
+Mussels,https://i.ibb.co/BPDp8V2/mussels.jpg,1500,1499,90,2,100,Dairy/Meat,This is Meat,FA3343,P9898
+Oyesters,https://i.ibb.co/phpzgV4/oysters.jpg,3500,3400,100,3,100,Dairy/Meat,This is Meat,FA4814,P1112
+Phesant,https://i.ibb.co/r5B8Wmn/pheasant.png,2500,2499,10,4,250,Dairy/Meat,This is Meat,FA2723,P2223
+Pork,https://i.ibb.co/4jWG3LS/pork.jpg,4000,3999,5,1,150,Dairy/Meat,This is Meat,FA2723,P3334
+Prawns,https://i.ibb.co/6wq38fb/prawn.jpg,1000,999,150,1,100,Dairy/Meat,This is Meat,FA3343,P4445
+Scallops,https://i.ibb.co/7t1VkFW/scallops.jpg,1200,1100,45,1,100,Dairy/Meat,This is Meat,FA4814,P5556
+Turkey,https://i.ibb.co/x3sD1YN/turkey.jpg,800,700,10,1,100,Dairy/Meat,This is Meat,FA8527,P6667
+Apple,https://i.ibb.co/cxkPGd7/apple.jpg,300,290,100,1,70,Fruit,This is fruit,FA3343,P7778
+Avacado,https://i.ibb.co/VBy1Wf1/avacado.jpg,700,680,50,1,70,Fruit,This is fruit,FA6050,P8889
+Banana,https://i.ibb.co/YdbHPgn/banana.jpg,100,99,50,1,100,Fruit,This is fruit,FA4814,P9101
+Beetroot,https://i.ibb.co/QD7WkgV/beetroot.jpg,50,47,15,1,150,Vegetable,This is fruit,FA8527,P1213
+Bitterguard,https://i.ibb.co/PhDrrcH/bittergourd.jpg,400,399,45,5,100,Vegetable,This is fruit,FA4814,P2324
+Black Grapes,https://i.ibb.co/F6fkYjC/blackgrapes.jpg,300,250,10,8,70,Fruit,This is fruit,FA8527,P3435
+Broccoli,https://i.ibb.co/1nX6Jhn/broccoli.jpg,500,470,15,1,100,Vegetable,This is fruit,FA6050,P4321
+Cabbage,https://i.ibb.co/xh6pTL9/cabbage.jpg,100,90,20,15,150,Vegetable,This is fruit,FA4814,P5432
+Carrot,https://i.ibb.co/Wv20J06/carrot.jpg,15,15,25,0,100,Vegetable,This is fruit,FA2723,P6543
+Cauliflower,https://i.ibb.co/SBnXdfC/cauliflower.jpg,50,50,30,0,100,Vegetable,This is fruit,FA4814,P7654
+Cherry,https://i.ibb.co/wBfFGKN/cherry.jpg,250,249,35,1,100,Fruit,This is fruit,FA8527,P8765
+Veg Corn,https://i.ibb.co/tx79QYW/cornveg.jpg,150,140,40,4,50,Vegetable,This is fruit,FA6050,P9876
+Dragon Fruit,https://i.ibb.co/vD1C9D2/dragonfruit.jpg,150,140,45,2,100,Fruit,This is fruit,FA4814,P2345
+Durian Fig,https://i.ibb.co/hKyGqhN/fig.jpg,120,110,50,4,50,Fruit,This is fruit,FA2723,P3456
+Garlic,https://i.ibb.co/dpxXPYx/garlic.jpg,65,64,55,1,150,Vegetable,This is fruit,FA6050,P4567
+Ginger,https://i.ibb.co/PWn5GVH/ginger.jpg,70,65,60,8,50,Vegetable,This is fruit,FA3343,P5678
+Green Apple,https://i.ibb.co/XkJbGxz/greenapple.jpg,180,178,65,1,100,Fruit,This is fruit,FA3343,P6789
+Green Capsicum,https://i.ibb.co/q79J4L4/greencapsicum.jpg,12,11,70,1,150,Vegetable,This is fruit,FA3343,P7890
+Green Chillies,https://i.ibb.co/5TNxFdB/greenchilli.jpg,10,10,75,0,70,Vegetable,This is fruit,FA6050,P2468
+Green Grapes,https://i.ibb.co/myWjhcc/greengrapes.jpg,150,150,80,0,150,Fruit,This is fruit,FA6050,P1357
+Green Mango,https://i.ibb.co/wQkWDH1/greenmango.jpg,350,340,85,12,70,Fruit,This is fruit,FA6050,P9753
+Green Peas,https://i.ibb.co/s3NvBNY/greenpeas.jpg,100,99,90,11,70,Vegetable,This is fruit,FA4814,P8642
+Guava,https://i.ibb.co/Zgk8jB0/guava.jpg,50,50,95,0,100,Fruit,This is fruit,FA6050,P7531
+Hybrid Watermelon,https://i.ibb.co/X8NtQTy/hybridwatermelon.png,200,199,100,5,150,Fruit,This is fruit,FA2723,P6420
+Jack Fruit,https://i.ibb.co/YNpQ1st/jackfruit.jpg,700,650,5,6,450,Fruit,This is fruit,FA8527,P1337
+Kiwi,https://i.ibb.co/n1VJwy7/kiwi.jpg,180,170,50,1,100,Fruit,This is fruit,FA6050,P3131
+Ladys Finger,https://i.ibb.co/SPGZCjp/ladysfinger.jpg,17,17,15,0,150,Vegetable,This is fruit,FA3343,P4747
+Lemon,https://i.ibb.co/6rrNBqw/lemon.jpg,14,14,60,0,100,Vegetable,This is fruit,FA4814,P6669
+Mango,https://i.ibb.co/6y5bYRw/mango.jpg,265,255,25,5,150,Fruit,This is fruit,FA2723,P8686
+Mushroom,https://i.ibb.co/8Y1b8mz/mushroom.jpg,400,380,70,1,100,Vegetable,This is fruit,FA4814,P5151
+Muskmelon,https://i.ibb.co/nLy4fsT/muskmelon.jpg,350,340,35,2,70,Fruit,This is fruit,FA3343,P1515
+Onion,https://i.ibb.co/qdQ8kgd/onion.jpg,45,45,80,0,150,Vegetable,This is fruit,FA4814,P9191
+Orange,https://i.ibb.co/5xLHzpt/orange.jpg,200,199,45,6,100,Fruit,This is fruit,FA8527,P1950
+Papaya,https://i.ibb.co/5KvZWr1/papaya.jpg,100,99,90,7,65,Fruit,This is fruit,FA2723,P2050
+Peach,https://i.ibb.co/SKBFQkv/peach.jpg,150,150,55,0,150,Fruit,This is fruit,FA3343,P2150
+Pear,https://i.ibb.co/Qkfk3NR/pear.jpg,350,345,10,1,65,Fruit,This is fruit,FA8527,P2250
+Pineapple,https://i.ibb.co/HV2KhhW/pineapple.jpg,200,195,5,1,65,Fruit,This is fruit,FA3343,P2350
+Plum,https://i.ibb.co/FWfg0GT/plum.jpg,200,199,10,3,100,Fruit,This is fruit,FA8527,P2450
+Pomegranate,https://i.ibb.co/R9rPyJQ/pomegranate.jpg,200,200,15,0,65,Fruit,This is fruit,FA3343,P2550
+Potato,https://i.ibb.co/j4FTnsZ/potato.jpg,50,50,20,0,65,Vegetable,This is fruit,FA2723,P2650
+Pumpkin,https://i.ibb.co/BG0Dd3H/pumpkin.jpg,450,440,25,6,150,Vegetable,This is fruit,FA6050,P2750
+Radish,https://i.ibb.co/Jnb1M7S/radish.jpg,15,15,35,0,65,Vegetable,This is fruit,FA3343,P2850
+Red Capsicum,https://i.ibb.co/7zz1KG4/redcapsicum.jpg,25,25,20,0,50,Vegetable,This is fruit,FA3343,P2950
+Red Chillies,https://i.ibb.co/nwGnCr8/redchilli.jpg,25,25,20,0,100,Vegetable,This is fruit,FA8527,P3050
+Sapota,https://i.ibb.co/RQGgCzw/sapota.png,200,199,25,12,150,Fruit,This is fruit,FA4814,P3150
+Strawberry,https://i.ibb.co/vq1Gb3S/strawberry.jpg,300,285,45,10,50,Fruit,This is fruit,FA3343,P3250
+Tomato,https://i.ibb.co/gSWLf8x/tomato.jpg,35,35,65,0,100,Vegetable,This is fruit,FA3343,P3350
+Watermelon,https://i.ibb.co/F80cywz/watermelon.jpg,180,180,20,0,50,Fruit,This is fruit,FA6050,P3450

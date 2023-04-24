@@ -1,0 +1,190 @@
+/*   ------------ HEADER -------------    */
+
+.Header_Main
+{
+position:fixed;
+display:flex;
+z-index: 10;
+background-color: #eee;
+
+}
+
+
+.Home_Button, .About_Button, .Advertise_Button, .Purchase_Button
+{
+margin-top:2.3%;
+margin-left:30px;
+cursor:pointer;
+}
+
+
+.Header_Main .Home_Button .Main_H1, .Header_Main .About_Button .Main_H1, .Header_Main .Advertise_Button .Main_H1, .Header_Main .Purchase_Button .Main_H1, .Header_Main .SignUp_SignIn .Main_H1
+{
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-decoration:none;
+margin:0 1rem;  
+color:rgba(54, 113, 38, 1);
+font-size:28px;
+padding-top:30px;
+}
+
+
+.Header_Main .Home_Button > a:hover, .Header_Main .About_Button > a:hover, .Header_Main .Advertise_Button > a:hover, .Header_Main .Purchase_Button > a:hover, .Header_Main .SignUp_SignIn > a:hover
+{
+background-color: #04aa6d;
+cursor:default;
+color: #eee;
+padding: 6px;
+border-radius: 11px;
+border: 1px solid #eee;
+}
+
+
+.SignUp_SignIn
+{
+position:absolute;
+top:33%;
+right:4%;
+}
+
+
+.Home_Dropdown
+{
+display:none;
+background-color:#f9f9f9;
+position:absolute;
+width:300px;
+box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index:1001;
+}
+
+
+.Home_Dropdown a
+{
+font-size:20px;
+color:black;
+padding:12px 16px;
+text-decoration:none;
+display:block;
+}
+
+
+.Home_Button:hover .Home_Dropdown
+{
+display:block;
+margin-top:0.9%;
+}
+
+
+.About_Dropdown
+{
+display:none;
+position:absolute;
+width:250px;
+z-index:1001;
+background-color:#f9f9f9;
+box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+.About_Dropdown a
+{
+font-size:20px;
+color:black;
+padding:12px 16px;
+text-decoration:none;
+display:block;
+}
+
+
+.About_Button:hover .About_Dropdown
+{
+margin-top:0.9%;
+display:block;
+}
+
+
+.Advertise_Dropdown
+{
+display:none;
+position:absolute;
+background-color:#f9f9f9;
+box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+width:500px;
+z-index:1001;
+}
+
+
+.Advertise_Dropdown a
+{
+font-size:20px;
+color:black;
+padding:12px 16px;
+text-decoration:none;
+display:block;
+}
+
+
+.Advertise_Button:hover .Advertise_Dropdown
+{
+display:block;
+margin-top:0.9%;
+}
+
+
+.Purchase_Dropdown
+{
+display:none;
+position:absolute;
+background-color:#f9f9f9;
+box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+width:400px;
+z-index:1001;
+}
+
+
+.Purchase_Dropdown a
+{
+font-size:20px;
+color:black;
+padding:12px 16px;
+text-decoration:none;
+display:block;
+}
+
+
+.Purchase_Button:hover .Purchase_Dropdown
+{
+display:block;
+margin-top:0.9%;
+}
+
+
+.SignUp_SignIn_Dropdown
+{
+display:none;
+background-color:#f9f9f9;
+position:absolute;
+width:350px;
+box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index:1001;
+}
+
+
+.SignUp_SignIn_Dropdown a
+{
+font-size:20px;
+color:black;
+padding:12px 16px;
+text-decoration:none;
+display:block;
+}
+
+
+.SignUp_SignIn:hover .SignUp_SignIn_Dropdown
+{
+display:block;
+margin-top:6%;
+}
+
+/*  END HEADER */

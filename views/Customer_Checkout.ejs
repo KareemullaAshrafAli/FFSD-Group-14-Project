@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel = "icon" href = "/IMAGES/LOGO_FAVICON/Favicon_Icon.ico" type = "image/x-icon"  sizes = "16x16 32x32">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/cosmo/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="/CSS/Checkout_CSS_Styles.css">
+
+<title>CheckOut Page</title>
+<style>
+
+.change a{
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+	color: red;
+	font-size: 40px;
+	font-weight: bolder;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+
+</style>
+</head>
+<body>
+	
+
+  <div class = "change"><a href = "/Customer_Home_Page">X</a></div>
+
+
+  <div class="main">
+    <div class="card">
+      <div class="leftside">
+        <img src="/IMAGES/BACKGROUND_PICS/HandShake.jpeg" alt="product img" class="product">
+      </div>
+      <form action="">
+        <h1>CheckOut</h1>
+        <h2>Payment Information</h2>
+        <p>Cardholder Name</p>
+        <input type="text" class="inputbox" required>
+
+        <p>Card Number</p>
+        <input type="Number" class="inputbox" required>
+
+        <p>Card Type</p>
+        <select name="" id="" class="inputbox">
+          <option value="">select a card Type</option>
+          <option value="">Visa</option>
+          <option value="">MasterCard</option>
+        </select> 
+        <div class="expcvv">
+          <p class="expcvv-text">Expiry</p>
+          <input type="date" class="inputbox" required>
+          <p class="expcvv-text2">CVV</p>
+          <input type="text" class="inputbox" required>
+
+        </div>  
+        <button type="submit" class="button"> CheckOut</button>       
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
